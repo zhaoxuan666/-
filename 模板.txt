@@ -1,0 +1,17 @@
+#include <algorithm>//注意要包含该头文件
+
+int main( )
+{
+    vector<int> L;
+    L.push_back( 1 );
+    L.push_back( 2 );
+    L.push_back( 3 );
+    L.push_back( 4 );
+    L.push_back( 5 );
+    vector<int>::iterator result = find( L.begin( ), L.end( ), 3 ); //查找3
+    if ( result == L.end( ) ) //没找到
+        cout << "No" << endl;
+    else //找到
+        cout << "Yes" << endl;
+
+}
